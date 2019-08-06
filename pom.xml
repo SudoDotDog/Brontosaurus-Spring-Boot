@@ -12,7 +12,7 @@
 
     <groupId>dog.sudo.brontosaurus</groupId>
     <artifactId>sdk</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.1.0</version>
 
     <build>
         <plugins>
@@ -23,10 +23,10 @@
                 <configuration>
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
-                        <excludes>
-                            <exclude>junit:junit</exclude>
-                        </excludes>
                     </descriptorRefs>
+                    <excludes>
+                        <exclude>junit:junit</exclude>
+                    </excludes>
                 </configuration>
             </plugin>
             <plugin>
@@ -46,12 +46,6 @@
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>1.2.58</version>
-        </dependency>
-
-        <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>1.2.17</version>
         </dependency>
 
         <dependency>
