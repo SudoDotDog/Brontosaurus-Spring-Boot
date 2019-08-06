@@ -8,6 +8,9 @@ public class Main {
     public static void main(String[] args) {
 	    String test = "Bearer a.b.c";
 
-        Authorization t = Authorization.fromBearer(test);
+        Authorization a = Authorization.fromBearer(test);
+        Token t = a.token();
+
+        System.out.println(t.toString());
     }
 }

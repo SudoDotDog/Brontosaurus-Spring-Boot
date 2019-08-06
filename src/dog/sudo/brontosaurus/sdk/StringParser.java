@@ -16,6 +16,11 @@ public class StringParser {
 
     public  static List<String> extractRawToken(String raw) {
 
-        return Arrays.asList("");
+        String[] split = raw.split("\\.");
+        if(split.length != 3) {
+            return null;
+        }
+
+        return Arrays.asList(split[0], split[1], split[2]);
     }
 }

@@ -15,6 +15,10 @@ public class Authorization {
         this.raw = raw;
     }
 
+    public Token token(){
+        return new Token(this.raw);
+    }
+
     @Override
     public boolean equals(Object obj) {
         return super.equals(obj);
