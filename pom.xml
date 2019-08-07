@@ -24,9 +24,6 @@
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
-                    <excludes>
-                        <exclude>junit:junit</exclude>
-                    </excludes>
                 </configuration>
             </plugin>
             <plugin>
